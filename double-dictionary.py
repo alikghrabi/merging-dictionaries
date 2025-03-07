@@ -31,3 +31,14 @@ def count_total_employees(cmpnyemply):
         total += len(department)
     
     return total
+
+company_employees = input_company_employees()
+
+print_company_employees(company_employees)
+
+add_employee(company_employees, "Engineering", "David", 27, "Data Scientist")
+print("\nAfter adding David:")
+print_company_employees(company_employees)
+
+total_employees = count_total_employees(company_employees)
+print(f"\nTotal number of employees: {total_employees}")
