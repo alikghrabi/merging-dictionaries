@@ -25,3 +25,9 @@ def add_employee(cmpnyemply, department, age, role):
     else:
         print(f"Department  {department} doesn't exit!")
     
+def count_total_employees(cmpnyemply):
+    total = 0
+    for department in cmpnyemply.values():
+        total += len(department)
+    
+    return total
