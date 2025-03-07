@@ -16,3 +16,12 @@ def input_employees():
         
         employees[department] = department_employees
 
+def print_employees(cmpnyemply):
+    print(cmpnyemply)
+
+def add_employee(cmpnyemply, department, age, role):
+    if department in cmpnyemply:
+        cmpnyemply[department][name] = {"age": age, "role": role}
+    else:
+        print(f"Department  {department} doesn't exit!")
+    
